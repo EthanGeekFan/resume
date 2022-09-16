@@ -1,0 +1,203 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{CJKutf8}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/yifan-yang-ethan/}{\Large Yifan Yang}} & Email : \href{mailto:yyang29@stanford.edu}{yyang29@stanford.edu}\\
+  \href{https://www.linkedin.com/in/yifan-yang-ethan/}{https://www.linkedin.com/in/yifan-yang-ethan/} & Mobile : \href{tel:+16507889903}{+1-650-788-9903} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {B.S. in Electrical Engineering; GPA: 4.0}{Sep 2021 -- Jun 2025}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework}
+          {Computer and Network Security, Blockchain Foundations, Digital System Design and Architecture, Computer Systems, Parallel Computing, Operating Systems, iOS, Web Development, Probability.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {Research Assistant}{Sep 2022 - present}
+      \resumeItemListStart
+        \resumeItem{Hardware Accelerators for Machine Learning}
+          {The project focuses on creating re-configurable hardware to accelerate machine learning. My work focuses on optimizing ML models and test it on hardware prototypes.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Nvidia}{Santa Clara, CA}
+      {DL Infrastructure Engineer Intern}{Jun 2022 - Sep 2022}
+      \resumeItemListStart
+        \resumeItem{Kubernetes}
+          {Set up \& deployed a Redis high availability service. Improved reliability by containerizing and migrating chip verification services from designated server to Kubernetes cluster. Presented new service architecture to the team.}
+        \resumeItem{OpenTelemetry Integration}
+          {Set up service monitoring pipeline with OpenTelemetry protocol and set up monitoring dashboard with traces, metrics, and logs integration and visualization. Developed API standard for tracing library used in JavaScript, Python, Perl, etc. Developed an automated monitoring library for JavaScript with TypeScript support, verified and deployed to production.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Si-Tech}{Urumqi, China}
+      {Software Engineer Intern}{Jan 2021 - Jun 2021}
+      \resumeItemListStart
+        \resumeItem{AI Work Order System}
+          {Full-stack developed work order AI processing system on China Unicom backend services using Java and Web technologies. The system uses NLP to parse work order requests and compose possible solutions from database. Reduced more than 90\% of human work.}
+        \resumeItem{Architecture}
+          {Initiated the improvement of the current backend architecture by using Modularization and dynamic module loads. Developed a standard for future modules. Reduced maintenance complexity caused by deep coupling.}
+        \resumeItem{Workflows}
+          {Developed several command line tools to automate frequently used workflows. Time spent on repeated work reduced by 80\%.}
+        \resumeItem{Tests}
+          {Designed and implemented load tests for some China Unicom backend services.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {China Unicom}{Urumqi, China}
+      {Operation and Maintenance Engineer Intern}{Jan 2020 - Mar 2020}
+      \resumeItemListStart
+        \resumeItem{Data Collection}
+          {Discovered the inefficiency of 4G/5G base station operating data collection, formatting, and processing system and initiated a Python project to automate the workflow. Implemented the project and introduced the automated tools to daily work of more than 50 employees.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+      
+    \resumeSubItem{\href{https://github.com/EthanGeekFan/PiAuto}{PiAuto}}
+      {Open source project that turns iPads into portable car head units with a Raspberry Pi. The project consists of iOS app client and a server that runs on Raspberry Pi which can be powered through the 12V DC on board. The server connects with OBD port of the vehicle, interprets data, and serves using a self-hosted on-board Wi-Fi. The server also includes an AirPlay middleware to support AirPlay audios to the car speakers. \textbf{\href{https://github.com/EthanGeekFan/PiAuto}{\underline{View Project}}}}
+
+    \resumeSubItem{IoT System for Collecting Vital Signs and Geographic Location Data of Mobile Users}
+      {IoT research project. Designed a system prototype that could help pandemic control. The project was initiated Jan 2020, at the emergence of COVID-19. Proposed the idea of the project and developed the prototype of the system. Paper published on 2020 International Conference on Communications, Information Systems and Computer Engineering(CISCE). Led a 4-person team, assigning tasks to members, managing project progress, scheduling and hosting group meetings, and key role in directing project development.
+      \textbf{\href{https://ieeexplore.ieee.org/abstract/document/9258834?casa_token=KhERRPM-A1wAAAAA:3B60pPVZ1LtXf1N-xQMXXJcxG8uPbFwKYIEUf4aIxqFbgpwdS7gcBLYsT3EHPH09EOWey6_Iz7w}{\underline{View Project}}}}
+    \resumeSubItem{SigNoz}
+      {SigNoz is an open-source application performance monitoring tool. Helped completed some docs on how OpenTelemetry protocol works.
+      \textbf{\href{https://signoz.io/}{\underline{View Project}}}}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{CJK*}
+\end{document}
