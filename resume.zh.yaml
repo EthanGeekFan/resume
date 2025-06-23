@@ -1,0 +1,114 @@
+# yaml-language-server: $schema=./resume-schema.json
+personal:
+  name: "杨易凡"
+  email: "yyang29@stanford.edu"
+  linkedin: "https://www.linkedin.com/in/yifan-yang-ethan/"
+  phone_display: "+86 18935934072"
+  phone_href: "+16507889903"
+
+# 可以重新排序、添加、删除或自定义的部分
+sections:
+  - type: "education"
+    title: "教育背景"
+    items:
+      - institution: "斯坦福大学\\ Stanford University"
+        location: "美国加州"
+        degree: "电子电气工程学士; GPA: 4.0/4.0"
+        duration: "2024年毕业"
+        details:
+          - label: "相关课程"
+            description: "计算机网络安全，区块链底层，数字系统设计和架构，计算机系统，并行计算，操作系统，iOS开发，Web开发，概率系统分析。"
+
+  - type: "experience"
+    title: "实习经历"
+    items:
+      - company: "斯坦福大学\\ Stanford University"
+        location: "美国加州"
+        title: "研究员"
+        duration: "2022年9月至今"
+        details:
+          - label: "用于机器学习的硬件加速器"
+            description: "研究构建用于加速机器学习的可重构计算硬件。在项目中负责针对硬件设计优化机器学习模型并在硬件原型上测试。"
+
+      - company: "英伟达\\ Nvidia"
+        location: "美国加州总部"
+        title: "数字逻辑基础架构工程师"
+        duration: "2022年6月 - 2022年9月"
+        details:
+          - label: "Kubernetes"
+            description: "设计并部署了一个Redis高可用集群。通过将部署在专用服务器上的芯片测试服务容器化并迁移至Kubernetes集群，提高了内部服务的稳定性和性能。并且向团队介绍了改进后的服务架构。"
+          - label: "服务监控"
+            description: "设计了一套基于OpenTelemetry协议的服务监控系统。这套系统可以整合服务运行轨迹，各项数据，和日志并在管理后台中可视化。设计了一套标准化服务接口用于规范不同编程语言（JavaScript，Python，Perl等）中监控数据传输的调用。用JavaScript开发了一个自动监控插件库，已经过测试并投入生产环境。"
+
+      - company: "思特奇"
+        location: "新疆乌鲁木齐"
+        title: "软件工程师"
+        duration: "2021年1月 - 2021年6月"
+        details:
+          - label: "智能工单处理系统"
+            description: "用Java全栈开发了中国联通后端服务的智能工单处理系统。该系统使用自然语言处理来解析工单请求并从数据库中构建可能的解决方案。减少了 90\\% 以上的人力。"
+          - label: "服务架构"
+            description: "将后端服务架构改进为模块化并且动态加载所需模块。这项架构改进解除了不同服务功能之间的过度耦合，降低了维护复杂度。同时动态模块加载降低了服务运行时资源占用。为所有模块制定了一个通用标准和模板，使得未来开发新模块更加简单。"
+          - label: "工作流"
+            description: "开发了一些命令行工具，将大部分频繁使用的工作流自动化。节省了约80\\%的不必要时间投入。"
+          - label: "测试"
+            description: "为部分中国联通后台服务设计并实现了压力测试。"
+
+      - company: "中国联通"
+        location: "新疆乌鲁木齐"
+        title: "运维部实习生"
+        duration: "2020年1月 - 2020年3月"
+        details:
+          - label: "数据采集"
+            description: "发现了4G/5G基站运行数据的收集整理工作的效率问题，用Python实现了一个自动化工具来节省人工，并有超过50个员工开始在日常工作中使用该工具。"
+
+      - company: "数学建模与学科教学"
+        location: "新疆乌鲁木齐"
+        title: "数学建模教练/计算机编程教练"
+        duration: "2020年至今"
+        details:
+          - label: "数学建模"
+            description: "有偿担任北京人大附中数学建模团队的教练，指导学校团队参加2021美国大学生数学建模竞赛并获奖。"
+          - label: "计算机编程"
+            description: "自己组织计算机编程基础课程（Python）并担任教练。累计教授超过10名学员。"
+          - label: "数理化教学"
+            description: "独立开发针对初中高中学生的数理化融合课程，课程融合了三门学科的知识并有机组合，解决了很多学生运用知识困难的问题。累计教授15名学员，获得家长一致好评。"
+
+  - type: "projects"
+    title: "项目经历"
+    items:
+      - name: "PiAuto"
+        url: "https://github.com/EthanGeekFan/PiAuto"
+        description: "GitHub开源项目。使用Raspberry Pi让iPad变成可拆卸的车载主机。该项目由iOS应用程序客户端和运行在Raspberry Pi上的服务器组成。服务器可通过板载 12V DC 供电。服务器与车辆的OBD接口连接，解析数据，并使用服务器附带的Wi-Fi热点提供服务。该服务器还包括一个AirPlay中间件，以支持使用AirPlay在车载音响上播放音频。"
+
+      - name: "IoT System for Collecting Vital Signs and Geographic Location Data of Mobile Users"
+        url: "https://ieeexplore.ieee.org/abstract/document/9258834?casa\\_token=KhERRPM-A1wAAAAA:3B60pPVZ1LtXf1N-xQMXXJcxG8uPbFwKYIEUf4aIxqFbgpwdS7gcBLYsT3EHPH09EOWey6\\_Iz7w"
+        description: "物联网科研项目。设计了一个可以用于传染病防控的物联网系统原型。项目开始于2020年1月，正值新冠疫情迅速蔓延时期。我提出了该项目并带领4人团队发表了相关论文。论文发表在IEEE会议，可在IEEE Xplore和谷歌学术检索。苹果公司在2020年底发布的第6代Apple Watch正是使用了类似本项目中提到的基于红外线的血氧监测。"
+
+      - name: "SigNoz"
+        url: "https://signoz.io/"
+        description: "SigNoz是一个开源的应用程序性能监控工具。GitHub公共开源项目。 帮助完善了项目有关于OpenTelemetry协议工作原理部分的文档。"
+
+# 如何添加自定义部分的示例:
+#  - type: "skills"
+#    title: "技术技能"
+#    items:
+#      - category: "编程语言"
+#        skills: ["Python", "JavaScript", "Java", "C++"]
+#      - category: "框架"
+#        skills: ["React", "Node.js", "Spring Boot"]
+#
+#  - type: "publications"
+#    title: "学术发表"
+#    items:
+#      - title: "论文标题"
+#        authors: "作者1, 作者2"
+#        venue: "会议名称"
+#        year: "2024"
+#        url: "https://example.com"
+
+# 共享标签用于常见文本
+labels:
+  email: "电子邮箱"
+  mobile: "联系电话"
+  view_project: "项目链接" 

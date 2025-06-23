@@ -1,0 +1,106 @@
+# yaml-language-server: $schema=./resume-schema.json
+personal:
+  name: "Yifan Yang"
+  email: "yyang29@stanford.edu"
+  linkedin: "https://www.linkedin.com/in/yifan-yang-ethan/"
+  phone_display: "+1-650-788-9903"
+  phone_href: "+16507889903"
+
+# Sections can be reordered, added, removed, or customized
+sections:
+  - type: "education"
+    title: "Education"
+    items:
+      - institution: "Stanford University"
+        location: "Stanford, CA"
+        degree: "B.S. in Electrical Engineering"
+        duration: "Sep 2021 -- Jun 2024"
+        details:
+          - label: "Relevant Coursework"
+            description: "Computer Security, Blockchain, Digital System Design, Machine Learning, Computer Systems, Parallel Computing, Operating Systems, Compiler, Web Dev, VLSI."
+
+  - type: "experience"
+    title: "Experience"
+    items:
+      - company: "Stanford University"
+        location: "Stanford, CA"
+        title: "Research Assistant"
+        duration: "Sep 2022 - present"
+        details:
+          - label: "Hardware Accelerators for Machine Learning"
+            description: "The project focuses on creating re-configurable hardware to accelerate machine learning. My work focuses on optimizing BERT on hardware prototypes."
+          - label: "Hyperdimensional Computing Paradigm"
+            description: "The project focuses on finding a computing paradigm for hyperdimensional computing in many applications like ML and unconventional computing."
+          - label: "Hyperdimensional Computing Early Termination"
+            description: "Optimizing hyperdimentional computation with statistical models, which terminates heavy computation early and guarantee a bounded accuracy drop."
+
+      - company: "Nvidia"
+        location: "Santa Clara, CA"
+        title: "DL Infrastructure Engineer Intern"
+        duration: "Jun 2022 - Sep 2022 \\& Jun 2023 - Sept 2023 \\& Full-time since Jun 2024"
+        details:
+          - label: "Kubernetes"
+            description: "Set up \\& deployed a Redis HA service. Improved reliability by containerizing and migrating chip verification services from designated server to Kubernetes cluster. Presented new service architecture to the team."
+          - label: "OpenTelemetry Integration"
+            description: "Set up service monitoring pipeline with OpenTelemetry protocol. Developed API standard for tracing library. Developed an automated monitoring library deployed to production."
+          - label: "Tasker"
+            description: "An internal-use platform for scheduling and managing job runs for chiplet designs."
+          - label: "Log storage and query at scale"
+            description: "Built a distributed full log storage engine that is capable of full text search \\& aggregation \\& anomaly detection across TBs of data/day for months with millisecond latency. Serving multiple hardware teams."
+
+      - company: "Si-Tech"
+        location: "Urumqi, China"
+        title: "Software Engineer Intern"
+        duration: "Jan 2021 - Jun 2021"
+        details:
+          - label: "AI Work Order System"
+            description: "Full-stack developed work order AI processing system on China Unicom backend services using Java and Web technologies. The system uses NLP to parse work order requests and compose possible solutions from database. Reduced more than 90\\% of human work."
+          - label: "Architecture"
+            description: "Initiated the improvement of the current backend architecture by using Modularization and dynamic module loads. Developed a standard for future modules. Reduced complexity caused by deep coupling."
+          - label: "Workflows"
+            description: "Developed several command line tools to automate frequently used workflows. Time spent on repeated work reduced by 80\\%. Designed and implemented load tests for some China Unicom backend services."
+
+      - company: "China Unicom"
+        location: "Urumqi, China"
+        title: "Operation and Maintenance Engineer Intern"
+        duration: "Jan 2020 - Mar 2020"
+        details: []
+
+  - type: "projects"
+    title: "Projects"
+    items:
+      - name: "PiAuto"
+        url: "https://github.com/EthanGeekFan/PiAuto"
+        description: "Open source project that turns iPads into portable car head units with a Raspberry Pi. The project consists of iOS app client and a server that runs on Raspberry Pi which can be powered through the 12V DC on board. The server connects with OBD port of the vehicle, interprets data, and serves using a self-hosted on-board Wi-Fi. The server also includes an AirPlay middleware to support AirPlay audios to the car speakers."
+
+      - name: "IoT System for Collecting Vital Signs and Geographic Location Data of Mobile Users"
+        url: ""
+        description: "IoT research project. Designed a system prototype that could help pandemic control. The project was initiated Jan 2020, at the emergence of COVID-19. Proposed the idea of the project and developed the prototype of the system. Paper published on 2020 International Conference on Communications, Information Systems and Computer Engineering(CISCE). Led a 4-person team, assigning tasks to members, managing project progress, scheduling and hosting group meetings, and key role in directing project development."
+
+      - name: "SigNoz"
+        url: "https://signoz.io/"
+        description: "SigNoz is an open-source application performance monitoring tool. Helped completed some docs on how OpenTelemetry protocol works."
+
+# Example of how to add custom sections:
+#  - type: "skills"
+#    title: "Technical Skills"
+#    items:
+#      - category: "Programming Languages"
+#        skills: ["Python", "JavaScript", "Java", "C++"]
+#      - category: "Frameworks"
+#        skills: ["React", "Node.js", "Spring Boot"]
+#
+#  - type: "publications"
+#    title: "Publications"
+#    items:
+#      - title: "Paper Title"
+#        authors: "Author 1, Author 2"
+#        venue: "Conference Name"
+#        year: "2024"
+#        url: "https://example.com"
+
+# Shared labels for common text
+labels:
+  email: "Email"
+  mobile: "Mobile"
+  view_project: "View Project" 

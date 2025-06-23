@@ -1,0 +1,138 @@
+# yaml-language-server: $schema=./resume-schema.json
+personal:
+  name: "Jane Doe"
+  email: "jane.doe@example.com"
+  linkedin: "https://www.linkedin.com/in/janedoe/"
+  phone_display: "+1-555-123-4567"
+  phone_href: "+15551234567"
+
+# FLEXIBLE SECTIONS EXAMPLE - Demonstrates all capabilities
+sections:
+  # 1. REORDERED SECTIONS - Start with projects instead of education
+  - type: "projects"
+    title: "Featured Projects"  # Custom section title
+    items:
+      - name: "AI-Powered Resume Builder"
+        url: "https://github.com/janedoe/resume-builder"
+        description: "Built a machine learning system that automatically formats resumes based on job descriptions. Used Python, TensorFlow, and React."
+
+      - name: "Open Source Contribution"
+        url: "https://github.com/kubernetes/kubernetes"
+        description: "Contributed to Kubernetes core APIs. Implemented resource optimization features that improved cluster efficiency by 25\\%."
+
+  # 2. CUSTOM SECTION TYPE - Skills section
+  - type: "skills"
+    title: "Technical Skills"
+    items:
+      - category: "Programming Languages"
+        skills: ["Python", "JavaScript", "Go", "Rust", "TypeScript"]
+      - category: "Cloud \\& DevOps"
+        skills: ["AWS", "Kubernetes", "Docker", "Terraform", "GitLab CI"]
+      - category: "Databases"
+        skills: ["PostgreSQL", "MongoDB", "Redis", "Elasticsearch"]
+
+  # 3. STANDARD EDUCATION SECTION - but with custom title
+  - type: "education"
+    title: "Academic Background"
+    items:
+      - institution: "Massachusetts Institute of Technology"
+        location: "Cambridge, MA"
+        degree: "M.S. in Computer Science"
+        duration: "2020 - 2022"
+        details:
+          - label: "Thesis"
+            description: "\"Distributed Machine Learning Systems for Edge Computing\""
+          - label: "GPA"
+            description: "3.9/4.0"
+
+      - institution: "University of California, Berkeley"
+        location: "Berkeley, CA"
+        degree: "B.S. in Electrical Engineering"
+        duration: "2016 - 2020"
+        details:
+          - label: "Honors"
+            description: "Summa Cum Laude, Phi Beta Kappa"
+
+  # 4. CUSTOM SECTION TYPE - Publications
+  - type: "publications"
+    title: "Research Publications"
+    items:
+      - title: "Efficient Distributed Training for Large Language Models"
+        authors: "J. Doe, A. Smith, B. Johnson"
+        venue: "NIPS"
+        year: "2023"
+        url: "https://arxiv.org/abs/2023.12345"
+
+      - title: "Edge Computing Optimization in IoT Networks"
+        authors: "J. Doe, C. Lee"
+        venue: "IEEE Transactions on Mobile Computing"
+        year: "2022"
+        url: ""
+
+  # 5. STANDARD EXPERIENCE SECTION
+  - type: "experience"
+    title: "Professional Experience"
+    items:
+      - company: "Google"
+        location: "Mountain View, CA"
+        title: "Senior Software Engineer"
+        duration: "2022 - Present"
+        details:
+          - description: "Led development of distributed training infrastructure serving 1000+ ML engineers. Improved training speed by 40\\% through custom scheduling algorithms."
+          - label: "Team Leadership"
+            description: "Mentored 5 junior engineers and coordinated cross-team projects with product, research, and infrastructure teams."
+
+      - company: "Meta"
+        location: "Menlo Park, CA"
+        title: "Software Engineer"
+        duration: "2020 - 2022"
+        details:
+          - label: "Recommendation Systems"
+            description: "Built and optimized recommendation algorithms for Instagram Feed, serving 2B+ users daily. Achieved 15\\% improvement in user engagement metrics."
+
+  # 6. CUSTOM SECTION TYPE - Awards
+  - type: "awards"
+    title: "Awards \\& Recognition"
+    items:
+      - award: "Google Engineering Excellence Award"
+        organization: "Google Inc."
+        date: "2023"
+        location: "Mountain View, CA"
+        description: "Recognized for outstanding technical leadership and innovation in ML infrastructure."
+
+      - award: "Best Paper Award"
+        organization: "NIPS Conference"
+        date: "2023"
+        location: "New Orleans, LA"
+        description: ""
+
+  # 7. CUSTOM SECTION TYPE - Certifications
+  - type: "certifications"
+    title: "Professional Certifications"
+    items:
+      - name: "AWS Certified Solutions Architect"
+        issuer: "Amazon Web Services"
+        date: "2023"
+        expiry: "2026"
+        url: "https://aws.amazon.com/certification/"
+
+      - name: "Certified Kubernetes Administrator"
+        issuer: "Cloud Native Computing Foundation"
+        date: "2022"
+        expiry: "2025"
+        url: ""
+
+# EXAMPLE: How to add a completely custom section
+#  - type: "volunteer"
+#    title: "Volunteer Experience"  
+#    items:
+#      - name: "Code for Good Mentor"
+#        description: "Mentored underrepresented students in computer science through hands-on coding workshops."
+#      - name: "Open Source Maintainer"
+#        description: "Maintain popular Python libraries with 50K+ downloads per month."
+
+# Shared labels for common text
+labels:
+  email: "Email"
+  mobile: "Mobile"
+  view_project: "View Project" 
