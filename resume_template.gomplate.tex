@@ -96,7 +96,7 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\href{ {{- (datasource "data").personal.linkedin -}} }{\Large {{ (datasource "data").personal.name }}}} & {{ (datasource "data").labels.email }} : \href{mailto:{{ (datasource "data").personal.email }}}{ {{- (datasource "data").personal.email -}} }\\
-  {{- if (datasource "data").personal.linkedin }}\href{ {{- (datasource "data").personal.linkedin -}} }{ {{- (datasource "data").personal.linkedin -}} } & {{- end }}{{ (datasource "data").labels.mobile }} : \href{tel:{{ (datasource "data").personal.phone_href }}}{ {{- (datasource "data").personal.phone_display -}} } \\
+  {{- if (datasource "data").personal.linkedin }}\href{ {{- (datasource "data").personal.linkedin -}} }{ {{- (datasource "data").personal.linkedin -}} } {{- end }} & {{ (datasource "data").labels.mobile }} : \href{tel:{{ (datasource "data").personal.phone_href }}}{ {{- (datasource "data").personal.phone_display -}} } \\
 \end{tabular*}
 
 %----------DYNAMIC SECTIONS-----------------
