@@ -7,7 +7,7 @@
 .PRECIOUS: %.tex
 
 # Default target - build both main resumes
-all: english chinese
+all: english chinese academic-english
 
 # Universal pattern rules for any YAML file
 # Generate .tex from resume.*.yaml files
@@ -26,6 +26,9 @@ english: english.pdf
 
 chinese: chinese.pdf
 	@echo "chinese resume generated successfully!"
+
+academic-english: academic.english.pdf
+	@echo "academic-english resume generated successfully!"
 
 # Generate LaTeX files from templates and data using gomplate
 generate:

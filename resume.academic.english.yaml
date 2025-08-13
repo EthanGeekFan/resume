@@ -135,11 +135,11 @@ sections:
         url: ""
         description: "Implemented a full blockchain node and a pool coordinator; developed a cross-platform miner in C++/OpenCV+CUDA using CPU+GPU. When a fork/DoS-like incident stalled the class chain, open-sourced the miner \\& pool to aggregate peers' compute and restore chain liveness. (Spring 2022)"
 
-      - name: "CS229 $\\rightarrow$ CS194W: Music Genre / Time-series \\& HDC"
+      - name: "CS229 $\\rightarrow$ CS194W: Music Genre / Time-series \\& HDC (Team Lead)"
         url: ""
         description: "Explored audio time-series; HDC surpassed RNN/LSTM baselines in our setting. Productized the pipeline and applied OMEN-derived ideas to improve accuracy while remaining mobile-friendly."
 
-      - name: "CS224W: Graph Neural Networks \\& HDC"
+      - name: "CS224W: Graph Neural Networks \\& HDC (Team Lead)"
         url: ""
         description: "Explored GNN structures and how they capture/represent graph structures. Explored expressivity of HDC representations vs. GNNs across basic tasks. (Fall 2023)"
 
@@ -147,8 +147,8 @@ sections:
         url: "https://github.com/EthanGeekFan/PiAuto"
         description: "Turned iPads into portable head units via Raspberry Pi: iOS client + on-board server (12V power), Wi-Fi AP, AirPlay audio to car speakers, and OBD integration."
 
-      - name: "IoT System for Pandemic Control (with Prof. Fouad Tobagi)"
-        url: ""
+      - name: "IoT System for Pandemic Control (Team Lead, with Prof. Fouad Tobagi)"
+        url: "https://ieeexplore.ieee.org/abstract/document/9258834"
         description: "IoT research project designed as a system prototype for pandemic control. Initiated in Jan 2020 at the emergence of COVID-19. Led a 4-person team in developing the system for collecting vital signs and geographic location data of mobile users. Published at IEEE CISCE 2020."
 
   - type: "teaching"
