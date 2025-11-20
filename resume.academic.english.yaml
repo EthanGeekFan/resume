@@ -47,7 +47,7 @@ sections:
     items:
       - company: "Stanford University"
         location: "Stanford, CA"
-        title: "Research Assistant (Advisor: Prof. Sara Achour)"
+        title: "Research Student (Advisor: Prof. Sara Achour)"
         duration: "Sep 2022 -- Present"
         details:
           - label: "OMEN"
