@@ -1,7 +1,7 @@
 # Resume Build System using gomplate (no Python dependencies)
 # This Makefile uses gomplate for template rendering
 
-.PHONY: all english chinese generate build install-gomplate clean help legacy-english legacy-chinese
+.PHONY: all english chinese academic-english generate build install-gomplate clean help legacy-english legacy-chinese
 
 # Prevent Make from deleting intermediate .tex files
 .PRECIOUS: %.tex
@@ -18,7 +18,7 @@ all: english chinese academic-english
 # Generate .pdf from .tex files
 %.pdf: %.tex
 	@echo "Compiling $@ from $<..."
-	docker run --rm -v "$(shell pwd):/data" pdflatex $< && rm -f $*.aux $*.log $*.out $*.toc
+	docker run --rm -v "$(shell pwd):/data" -w /data texlive/texlive:latest pdflatex -interaction=nonstopmode $< && rm -f $*.aux $*.log $*.out $*.toc
 
 # Convenience targets for main resume files
 english: english.pdf
@@ -46,27 +46,27 @@ generate-chinese:
 	gomplate --file resume_template.gomplate.tex --datasource data=resume.chinese.yaml --out chinese.tex
 
 # Legacy targets for english and chinese (with explicit generation)
-english-legacy: generate-english build
+english-legacy: generate-english
 	@echo "Compiling english resume (legacy mode)..."
-	docker run --rm -v "$(shell pwd):/data" pdflatex english.tex && rm -f english.aux english.log english.out english.toc
+	docker run --rm -v "$(shell pwd):/data" -w /data texlive/texlive:latest pdflatex -interaction=nonstopmode english.tex && rm -f english.aux english.log english.out english.toc
 
-chinese-legacy: generate-chinese build
+chinese-legacy: generate-chinese
 	@echo "Compiling chinese resume (legacy mode)..."
-	docker run --rm -v "$(shell pwd):/data" pdflatex chinese.tex && rm -f chinese.aux chinese.log chinese.out chinese.toc
+	docker run --rm -v "$(shell pwd):/data" -w /data texlive/texlive:latest pdflatex -interaction=nonstopmode chinese.tex && rm -f chinese.aux chinese.log chinese.out chinese.toc
 
 # Legacy targets for direct LaTeX compilation (without template generation)
-legacy-english: build
+legacy-english:
 	@echo "Compiling english resume (legacy mode)..."
-	docker run --rm -v "$(shell pwd):/data" pdflatex english.tex && rm -f english.aux english.log english.out english.toc
+	docker run --rm -v "$(shell pwd):/data" -w /data texlive/texlive:latest pdflatex -interaction=nonstopmode english.tex && rm -f english.aux english.log english.out english.toc
 
-legacy-chinese: build
+legacy-chinese:
 	@echo "Compiling chinese resume (legacy mode)..."
-	docker run --rm -v "$(shell pwd):/data" pdflatex chinese.tex && rm -f chinese.aux chinese.log chinese.out chinese.toc
+	docker run --rm -v "$(shell pwd):/data" -w /data texlive/texlive:latest pdflatex -interaction=nonstopmode chinese.tex && rm -f chinese.aux chinese.log chinese.out chinese.toc
 
-# Build Docker image for LaTeX compilation
+# Pull the public texlive Docker image (optional - Docker will auto-pull if needed)
 build:
-	@echo "Building pdflatex Docker image..."
-	docker build -t pdflatex .
+	@echo "Pulling texlive/texlive:latest Docker image..."
+	docker pull texlive/texlive:latest
 
 # Install gomplate (cross-platform)
 install-gomplate:
@@ -119,7 +119,7 @@ help:
 	@echo "  generate         - Generate both LaTeX files from templates"
 	@echo "  generate-english - Generate only english LaTeX file"
 	@echo "  generate-chinese - Generate only chinese LaTeX file"
-	@echo "  build           - Build Docker image for LaTeX compilation"
+	@echo "  build           - Pull texlive/texlive:latest Docker image"
 	@echo "  install-gomplate - Install gomplate CLI tool"
 	@echo "  clean           - Clean auxiliary files and PDFs"
 	@echo "  clean-all       - Clean everything including generated LaTeX files"

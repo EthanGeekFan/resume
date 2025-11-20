@@ -1,0 +1,262 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{CJKutf8}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% Custom command for publications with better line spacing
+\newcommand{\resumePublication}[4]{
+  \vspace{-1pt}\item
+    \begin{minipage}[t]{0.97\textwidth}
+      \textbf{#1} \hfill #2 \\
+      \vspace{1pt}
+      {\small #3. \textit{#4}.}
+    \end{minipage}
+    \vspace{2pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/yifan-yang-ethan/}{\Large Yifan (Ethan) Yang}} & Email : \href{mailto:yyang29@stanford.edu}{yyang29@stanford.edu}\\\href{https://www.linkedin.com/in/yifan-yang-ethan/}{LinkedIn} $\cdot$\href{https://github.com/EthanGeekFan}{GitHub} $\cdot$\href{https://scholar.google.com/citations?user=P4cZDD0AAAAJ&hl=en&oi=sra}{Google Scholar} & Mobile : \href{tel:+16507889903}{+1-650-788-9903} \\
+\end{tabular*}
+
+%----------DYNAMIC SECTIONS-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {B.S. in Electrical Engineering}{Sep 2021 -- Jun 2024}
+      \resumeItemListStart
+        \resumeItem{GPA}
+          {3.9/4.0}
+        \resumeItem{Selected Coursework}
+          {Operating Systems, Compilers, Computer Architecture, Parallel Computing, Machine Learning, Computer Security, Blockchain, Digital System Design, VLSI, Web Development.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\section{Publications \& Preprints}
+  \resumeSubHeadingListStart
+    \resumePublication
+      {\href{https://dl.acm.org/doi/pdf/10.1145/3669940.3707254}{Early Termination for Hyperdimensional Computing Using Inferential Statistics (OMEN)}}
+      {2025}
+      {Pu (Luke) Yi, Yifan Yang, Chae Young Lee, Sara Achour}
+      {ASPLOS}
+    \resumePublication
+      {\href{https://openreview.net/forum?id=V0tOv6thjN}{Exchangeability in Neural Network Architectures and its Application to Dynamic Pruning}}
+      {2025}
+      {Pu (Luke) Yi, Tianlang Chen, Yifan Yang, Sara Achour}
+      {ICML 2025 Workshop (ES-FoMo III); NeurIPS submission under review}
+    \resumePublication
+      {IoT System for Collecting Vital Signs and Geographic Location Data of Mobile Users}
+      {2020}
+      {Yifan Yang, Yujie Wang, Yangkai Lin, Liye Jia}
+      {2020 International Conference on Communications, Information System and Computer Engineering (CISCE)}
+  \resumeSubHeadingListEnd
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {Research Student (Advisor: Prof. Sara Achour)}{Sep 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{OMEN}
+          {Co-developed OMEN, reframing HDC inference with inferential statistics to reduce computation while preserving accuracy guarantees.}
+        \resumeItem{GPU parallelism}
+          {Re-engineered the experimental stack to leverage GPU parallelism, shrinking per-experiment turnaround from days to < 1 minute, enabling richer ablations and broader dataset coverage.}
+        \resumeItem{Artifacts \& reproducibility}
+          {Led artifact engineering (one-command runners; fixed seeds; data/log parsers -> auto-generated LaTeX tables) and helped secure artifact-quality recognition.}
+        \resumeItem{LearningHD}
+          {Proposed and implemented learned encoders and learned class hypervectors to densify representations and improve downstream accuracy versus random hypervectors.}
+        \resumeItem{On-device pipeline}
+          {Built a microcontroller-based on-device evaluation pipeline (precise timing \& memory accounting) to support edge-intelligence claims and documentation.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {Post-OMEN Research — Dynamic Pruning via Exchangeability (with Prof. Sara Achour)}{2024 -- 2025}
+      \resumeItemListStart
+        \resumeItem{Exchangeability}
+          {Formalized exchangeability in NN parameters/activations, showing exploitable redundancy at inference time; derived ExPrune, a per-input dynamic pruning rule.}
+        \resumeItem{Evaluation harness}
+          {Built an evaluation harness over CNN/Transformer backbones with controlled sparsity–accuracy–latency ablations; standardized early-exit vs. dynamic-pruning baselines for fair comparisons.}
+        \resumeItem{Reproducibility}
+          {Refactored the codebase for reproducibility (scripts, seed discipline, reporting) and prepared public artifacts/experiment sheets.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {Exploratory Project — Music Note Prediction (with Prof. Sara Achour)}{2023 -- 2024}
+      \resumeItemListStart
+        \resumeItem{Task formulation}
+          {Formulated symbolic music note prediction as a time-series task; benchmarked HDC encoders vs. RNN/LSTM \& lightweight Transformers under strict memory/latency constraints.}
+        \resumeItem{Pipeline}
+          {Implemented dataset curation (MIDI -> event sequences), on-device profiling, and anytime/early-halt evaluators; recorded negative results and introduced a hybrid encoder with stabilized voting.}
+        \resumeItem{Outcomes}
+          {Clarified regimes where HDC wins (short horizon, noisy labels, tight memory) and where learned encoders dominate; distilled insights into follow-up ablations for ExPrune/OMEN.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Stanford University (CS107E)}{Stanford, CA}
+      {RISC-V Course Migration \& Infrastructure}{Aug 2023 -- Jun 2024; ongoing support through Aug 2025}
+      \resumeItemListStart
+        \resumeItem{Course migration}
+          {Migrated the course from ARM/Raspberry Pi to RISC-V boards: rebuilt the teaching codebase (display pipeline, PS/2 keyboard, build/flash workflows), studied schematics/ISA, and recreated peripheral drivers (I²C/SPI/SD, etc.).}
+        \resumeItem{Toolchain enablement}
+          {Researched and enabled RVV 0.7.1 and FPU in the MangoPi toolchain; authored activation guides \& intrinsics notes integrated into the official project guide.}
+        \resumeItem{Support \& maintenance}
+          {Provided ongoing office hours/debugging support post-graduation and maintained issues/patches with course staff.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\section{Industry \& Engineering Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {NVIDIA}{Santa Clara, CA}
+      {Deep Learning Infrastructure Engineer}{Full-time: Jun 2024 -- Present; Intern: Jun--Sep 2022, Jun--Sep 2023}
+      \resumeItemListStart
+        \resumeItem{Platform ownership}
+          {Project owner/architect \& primary implementer of a distributed, asynchronous log analytics platform for silicon verification teams (design $\rightarrow$ APIs $\rightarrow$ implementation $\rightarrow$ rollout).}
+        \resumeItem{Capabilities}
+          {Real-time tail \& regex, multi-line parsing/structured extraction, error detection \& alerting, precise stack-trace mapping, free-text search with millisecond-level latency, and elastic autoscaling at TBs/day scale.}
+        \resumeItem{Latency}
+          {Typical tail-to-query delay at our scale was minute-level with off-the-shelf engines; our design achieves millisecond-level end-to-end query latency under production load (measured internally).}
+        \resumeItem{Additional contributions}
+          {Containerized \& migrated chip-verification services to Kubernetes; deployed Redis HA; built an OpenTelemetry observability pipeline \& an internal tracing library; designed and implemented Tasker, a job scheduling/management platform for chiplet workflows.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Si-Tech (Urumqi)}{Urumqi, China}
+      {Software Engineer Intern}{Jan 2021 -- Jun 2021}
+      \resumeItemListStart
+        \resumeItem{AI work-order system}
+          {Built an AI work-order system (Java/Web + NLP), reducing human triage by > 90\%; modularized backend to decouple subsystems; automated workflows to cut processing time by ~ 80\%.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {China Unicom (Urumqi)}{Urumqi, China}
+      {O\&M Engineer Intern}{Jan 2020 -- Mar 2020}
+  \resumeSubHeadingListEnd
+\section{Selected Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{EE374 Blockchain Node \& Mining Pool (Team Lead)}
+      {Implemented a full blockchain node and a pool coordinator; developed a cross-platform miner in C++/OpenCV+CUDA using CPU+GPU. When a fork/DoS-like incident stalled the class chain, open-sourced the miner \& pool to aggregate peers' compute and restore chain liveness. (Spring 2022)}
+    \resumeSubItem{CS229 $\rightarrow$ CS194W: Music Genre / Time-series \& HDC (Team Lead)}
+      {Explored audio time-series; HDC surpassed RNN/LSTM baselines in our setting. Productized the pipeline and applied OMEN-derived ideas to improve accuracy while remaining mobile-friendly.}
+    \resumeSubItem{CS224W: Graph Neural Networks \& HDC (Team Lead)}
+      {Explored GNN structures and how they capture/represent graph structures. Explored expressivity of HDC representations vs. GNNs across basic tasks. (Fall 2023)}
+    \resumeSubItem{\href{https://github.com/EthanGeekFan/PiAuto}{PiAuto (Open-source)}}
+      {Turned iPads into portable head units via Raspberry Pi: iOS client + on-board server (12V power), Wi-Fi AP, AirPlay audio to car speakers, and OBD integration. \textbf{\href{https://github.com/EthanGeekFan/PiAuto}{\underline{View Project}}}}
+    \resumeSubItem{\href{https://ieeexplore.ieee.org/abstract/document/9258834}{IoT System for Pandemic Control (Team Lead, with Prof. Fouad Tobagi)}}
+      {IoT research project designed as a system prototype for pandemic control. Initiated in Jan 2020 at the emergence of COVID-19. Led a 4-person team in developing the system for collecting vital signs and geographic location data of mobile users. Published at IEEE CISCE 2020. \textbf{\href{https://ieeexplore.ieee.org/abstract/document/9258834}{\underline{View Project}}}}
+  \resumeSubHeadingListEnd
+\section{Teaching \& Service}
+  % Custom section type: teaching
+  \resumeSubHeadingListStart
+    \resumeSubItem{CS107E contributions}
+      {Contributed write-ups to the CS107E project guide (RISC-V RVV/FPU activation, intrinsics usage, peripheral drivers \& lab materials); continued office hours \& debugging support after graduation; contribution spanned over a year. }
+  \resumeSubHeadingListEnd
+\section{Research Interests}
+  % Custom section type: interests
+  \resumeSubHeadingListStart
+    \resumeSubItem{Low-power ML for edge devices}
+      {Hardware–software co-design for on-device intelligence. }
+    \resumeSubItem{Hyperdimensional Computing (HDC)}
+      {Statistical early termination, anytime/early-halt inference, learned encoders \& class hypervectors. }
+    \resumeSubItem{Dynamic pruning \& efficient inference}
+      {Dynamic pruning/elastic inference for neural networks; time-series/audio ML under tight latency \& memory budgets. }
+  \resumeSubHeadingListEnd
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Programming}
+      {C/C++, Python, Go, JavaScript/TypeScript, CUDA, Verilog/RTL }
+    \resumeSubItem{Systems \& Infra}
+      {RISC-V/ARM bare-metal, RVV, GPU optimization, Linux, Kubernetes, Docker, OpenTelemetry, CI/CD }
+    \resumeSubItem{ML}
+      {on-device benchmarking, PyTorch, CNN, GNN, RNN }
+    \resumeSubItem{Tools}
+      {LaTeX, Git }
+  \resumeSubHeadingListEnd
+
+\end{CJK*}
+\end{document} 
